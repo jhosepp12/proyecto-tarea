@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIENDA</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header class="cabecera">
+        <div class="barra">
+            <a  class="logo" href="../index.html">PAULO LONDRA</a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="fotos.html">FOTOS</a></li>
+                    <li><a href="datos.html">DATOS</a></li>
+                    <li><a href="musicas.html">MÚSICAS</a></li>
+                    <li><a href="enlaces.html">ENLACES</a></li>
+                    <li><a class="activo" href="tienda.html">TIENDA</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="banner">
+        <h1>Tienda de recuerditos</h1>
+    </section>
+    <main class="contenedor">
+        <section class="seccion">
+            <h2 class="titulo">Recuerditos</h2>
+            <div class="productos">
+                <article class="producto">
+                    <img src="../img/gorra.jpg" alt="gorra">
+                    <h3>Gorra</h3>
+                    <p >Precio: Bs. 60</p>
+                </article>
+                <article class="producto">
+                    <img src="../img/polera.jpg" alt="polera">
+                    <h3>Polera</h3>
+                    <p >Precio: Bs. 80</p>
+                </article>
+                <article class="producto">
+                    <img src="../img/taza.jpg" alt="taza">
+                    <h3>Taza</h3>
+                    <p>Precio: Bs. 40</p>
+                </article>
+                <article class="producto">
+                    <img src="../img/poster.jpg" alt="poster">
+                    <h3>Poster</h3>
+                    <p>Precio: Bs. 50</p>
+                </article>
+            </div>
+        </section>
+        <section class="seccion">
+            <h2 class="titulo">Formulario de compra</h2>
+            <form class="formulario" action="#" method="post">
+                <div class="campo">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+                </div>
+                <div class="campo">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="correo" placeholder="Tucorreo@gmail.com" >
+                </div>
+                <div class="campo">
+                    <label for="producto">Recuerdito:</label>
+                    <select id="producto" name="producto" >
+                        <option >Gorra -Bs.60</option>
+                        <option >Polera -Bs.80</option>
+                        <option >Taza -Bs.40</option>
+                        <option >Poster -Bs.50</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1" >
+                </div>
+                <div class="campo completo">
+                    <label for="direccion">Dirección de envío:</label>
+                    <textarea id="direccion" name="direccion" rows="3" placeholder="Calle ,zona"></textarea>
+                </div>
+                <div class="campo completo">
+                    <input class="boton" type="submit" value="Comprar ahora">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="pie">
+        <p>Diseñado por: <b>Jhosep Harry Calle Quispe</b></p>
+    </footer>
+</body>
+</html>

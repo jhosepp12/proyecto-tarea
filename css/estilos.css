@@ -1,0 +1,251 @@
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: #1a1030;
+    background-image: url(../img/portada1.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+a{
+    color: cyan;
+}
+p{
+    margin-bottom: 10px;
+    color: rgb(219, 211, 225);
+    line-height: 1.5;
+}
+ol, ul{
+    margin-left: 25px;
+    line-height: 1.8;
+}
+.cabecera{
+    background-color: rgba(15, 14, 14, 0.964);
+    border-bottom: 3px solid blueviolet;
+}
+.barra{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+nav a{
+    display: block;
+    padding: 8px 12px;
+    margin:  2px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.portada{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 80px 20px;
+    text-align: center;
+}
+.portada-texto{
+    max-width: 700px;
+    margin: 0 auto;
+}
+.portada h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.banner{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px 20px;
+    text-align: center;
+}
+.banner h1{
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+.contenedor{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px 30px;
+}
+.seccion{
+    margin-top: 30px;
+}
+.titulo{
+    font-weight: bold;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: rgb(155, 21, 155);
+}
+.izquierda{
+    text-align: left;
+}
+.tarjeta,.caja, .producto, .formulario, .contacto, .seccion-dos div{
+    background-color: rgba(0, 0, 0, 0.65);
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+    padding: 20px;
+}
+.tarjetas, .productos, .galeria, .seccion-dos, .seccion2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.seccion2{
+    margin-top: 30px;
+}
+.tarjeta{
+    width: 30%;
+    min-width: 220px;
+    flex-grow: 1;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+.tarjeta:hover {
+    border-color: cyan;
+}
+.seccion-dos{
+    text-align: center;
+}
+.seccion-dos img {
+    width: 70%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+.seccion-dos div {
+    flex: 1;
+    min-width: 250px;
+}
+
+.galeria figure{
+    width: 30%;
+    min-width: 250px;
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.65);
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+    padding: 8px;
+}
+.galeria img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+figcaption{
+    text-align: center;
+    margin-top: 6px;
+}
+
+.tabla-contenedor{
+    overflow-x: auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+th, td{
+    padding: 10px;
+    border: 1px solid white;
+}
+th{
+    background-color: blueviolet;
+}
+td{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.caja{
+    width: 45%;
+    min-width: 280px;
+    flex-grow: 1;
+}
+.producto{
+    width: 22%;
+    min-width: 200px;
+    flex-grow: 1;
+    text-align: center;
+}
+.producto img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.formulario{
+    max-width: 700px;
+    margin: 0 auto;
+}
+.campo{
+    margin-bottom: 15px;
+}
+label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+input[type="text"],input[type="email"],input[type="number"],select,textarea{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contacto{
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+.correo{
+    font-size: 18px;
+}
+
+.pie{ 
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.pie p{
+    margin: 0;
+}
+.perfil{
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+nav a.activo{
+    background-color: blueviolet;
+}
+.boton{
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 16px;        
+    cursor: pointer;
+    display: block;
+    margin: 0 auto ;
+}
+
+
